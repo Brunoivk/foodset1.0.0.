@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <style>
+        
+
+        
+
+footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 1000px;
+  background-color: rgba(255, 0, 0, 0.603);
+  color: white;
+  text-align: center;
+  margin-right: auto;
+    margin-left: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+        </style>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>foodset</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+<div class="slika" >
+  </div>
+    <noscript>
+      <strong>We're sorry but foodset doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+  
+  
+    <div id="app"></div>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.1/firebase-firestore.js"></script>
+    
+  
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAezm6978LtfoF0hWIVO_f0Wdm7pjGxNAw",
+    authDomain: "foodset-c1188.firebaseapp.com",
+    databaseURL: "https://foodset-c1188.firebaseio.com",
+    projectId: "foodset-c1188",
+    storageBucket: "foodset-c1188.appspot.com",
+    messagingSenderId: "981306447001",
+    appId: "1:981306447001:web:242791a338529cde755408"
+  };
+ // Initialize Firebase
+ firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      var db = firebase.firestore();
+      var storage = firebase.storage();
+</script>
+
+
+  </body>
+
+  <footer>
+      <p>foodset team</p>
+  <p>Kontakt informacije :  <a href="mailto:foodset@gmail.com">
+  foodset@gmail.com</a>.</p>
+    </footer>
+
+</html>
